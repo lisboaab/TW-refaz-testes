@@ -1,0 +1,78 @@
+BOTAO SUBMIT COM NOME "SEND":
+    <button type="submit">Send</button>
+
+____________________________________________
+
+TEXTO COPYRIGHT:
+    <p id="copyright">Todos os direitos reservados &copy; 2023 Beatriz Lisboa.</p>
+
+____________________________________________
+
+LISTA DENTRO DE LISTA:
+    <ul>
+        <li><a href="#"> Main</li></a>
+            <ul>
+                <li><a href="#nextMatch">Next Match</a></li>
+                <li><a href="#latestMatchHighlight">Latest Match Highlights</a></li>
+                <li><a href="#latestNews">Latest News</a></li>
+            </ul>
+        <li><a href="news/index.html">News</a></li>
+        <li><a href="shop/index.html">Shop</a></li>
+    </ul>
+
+____________________________________________
+
+BOTAO QUE MANDA PARA PARTE ESPECIFICA DA PAGINA:
+        colocar como link do botao o ID da parte que quer q va do site
+        Ex.: 
+        <li><a href="#nextMatch">Next Match</a></li> -> botao
+        <div id="nextMatch"> -> ID da parte do site
+
+____________________________________________
+
+VIDEO BASE:
+    <video width="350" height="300" controls>
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    </video>
+
+____________________________________________
+
+DIVIDER, LINHA QUE DIVIDE A TELA:
+    <hr>
+____________________________________________
+
+TEXT AREA, AREA DE TEXTO, INPUT DE TEXTO GRANDE:
+    <textarea name="texto" rows="5" cols="50" style="overflow: auto;"></textarea>
+    também pode adicionar outras propriedades, como id, class, placeholder, required
+    style="overflow: auto" -> permite que os usuários rolem o conteúdo do campo de texto quando o texto exceder o tamanho da caixa de texto.
+
+____________________________________________
+
+IR E VOLTAR DE PAGINA:
+    arquivo para sair de uma pasta: "..//exercicio.html"
+    para ir p outro arquivo sem sair de pasta ".//exercico.html" ou so "exercico.html"
+
+____________________________________________
+
+TABELA:
+
+
+
+____________________________________________
+
+FORM:
+    Fieldset = borda ao redor de um espaço
+        <fieldset>
+            <legend>Titulo do fieldset</legend>
+            ...conteudo dentro...
+        </fieldset>
+
+    Action do form = 
+        isso: O formulário deverá submeter para a rota ”/form-submit/index.html” do servidor com o domínio ”myform.com” (protocolo HTTPS) na porta 8080
+        significa isso: <form action="https://myform.com:8080/form-submit/index.html" method="POST">
+
+    Botao de submit com texto = <button type="submit" id="btnSubmit">Enviar</button>
+
+    Submeter o form em nova tab ou pagina = <form ... target="_blank">...
+
+    Method = para dados sensiveis: POST; outros: GET

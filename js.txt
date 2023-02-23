@@ -1,0 +1,46 @@
+            DOM
+DOM STEP-BY-STEP
+    1. Cria as variaveis(const) de todos os elementos que vai precisar
+        ex: const container = document.getElementById('bearsContainer');
+    2. Coloca o addEventListener va variavel criada para o botao, e ja coloca a devida funcao
+    3. Cria os novos elementos que vai precisar
+        ex: insertButton.addEventListener('click', function() {
+        const newFigure = document.createElement('figure');
+        const newImage = document.createElement('img');
+        const newCaption = document.createElement('figcaption');
+    4. Define o style de cada elemento
+        ex: elementoCriado.style.color = 'white';
+    5. Faz o append dos elementos criados dentro do container criado
+    6. Faz o append do container criado para o container principal do HTML
+
+
+
+PARA PEGAR O VALOR DE UM INPUT (DOM):
+    const imageInput = document.getElementById('image')
+    elementoCriado.src = variavelDoGetElementById.value; -> define o src do elemento criado como o link inserido no input
+
+
+PARA APAGAR TUDO DENTRO DE UM CONTAINER MENOS O PRIMEIRO ELEMENTO:
+    const resetButton = document.getElementById('removeAllBears');
+    const container = document.getElementById('bearsContainer');
+    resetButton.addEventListener('click', function() {
+        while (container.children.length > 1) {
+            container.removeChild(container.lastChild); #remove comecando do ultimo elemento
+    }
+
+
+____________________________________________
+
+
+COMPARA LETRA POR LETRA DE UMA STIRNG E CONTA VOGAIS
+    function countVowels() {
+        let frase = prompt("Insira uma frase aqui: ")
+        var count = 0
+        for (let i = 0; i < frase.length; i++) {
+            let letra = frase[i].toLowerCase()
+            if (letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u") {
+                count += 1
+            }
+        }
+    console.log("A frase tem ", count, " vogais")
+    }

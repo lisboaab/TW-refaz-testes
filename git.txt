@@ -1,0 +1,59 @@
+BASEADO NO TESTE 1:
+- Abre a pasta com o GUI BASH
+- Inicia o repositório com `git init`
+- Usa o `touch <nome do arquivo>` para criar um arquivo
+- Adiciona as frases no arquivo usando o próprio notas
+- Usa `git add <nome do arquivo>` para adicionar ele na area de mudanças
+- Faz commit das mudanças com `git commit -m “mensagem do commit”`
+- Deleta um arquivo com `git rm <nome do arquivo>`
+- Criar uma nova branch e automaticamente já mudar pra ela com `git checkout -b <nomeDaBranch>`
+- Fazer merge da branch criada para a branch master com `git merge ****<nomeDaBranch>`
+    - Para fazer merge de duas branches ao mesmo tempo: `git merge branch1 branch2`
+
+____________________________________________
+
+- **Do PC para o github:**
+1. Criar/copiar o arquivo na pasta
+2. Abrir o arquivo com o GIT Bash 
+3. Para inicializar um repositório: usar comando **`git init`**
+4. Para linkar esse arquivo ao repositório do git hub: usar o comando **`git remote add origin** {+ link do repositório criado no github}` 
+→ Usar o comando **`git remote -v`** para verificar qual repositório o arquivo está linkado
+5. Usar o comando **(`git add .`)** para adicionar a mudança do working directory para a staging area
+6. Usar comando **(`git commit -m “mensagem”`)** para dar commit no arquivo com uma mensagem que desejar → o “-m” adiciona a mensagem
+7. Usar o comando **`git push --set-upstream origin master`** para fazer o push dessa branch e set the remote as upstream
+8. Para enviar o projeto pro github, usar o comando **“`git push`”**. Ou `git push -u origin main` pra mandar o projeto pra branch main
+
+____________________________________________
+
+Para ir para determinada branch "git checkout branchX"
+
+"git push -u"  - faz push commit para sincronizar com o repositorio online
+
+Para enviar o projeto pro github, usar o comando “git push” 
+Ou git push -u origin main pra mandar o projeto pra branch main 
+
+"git branch [nome branch]" -  Cria a branch mas nao navega para tal
+
+`git pull` : comando que baixa do github para o seu computador o arquivo com as alterações feitas
+
+Para deletar uma branch que não é mais necessária: `git branch -d branchX`
+
+
+git status | git log
+
+
+
+
+Quando um arquivo está linkado a um repositório git mas vc quer deslinkar os dois sem apagar os arquivos:**
+    1. Abre a pasta com o GUI BASH
+    2. Digita **`cd`** (change directory).
+    3. Execute o comando **`rm -rf .git`** para desativar o repositório git da pasta
+
+____________________________________________
+    
+Quando o arquivo já tem um remote definido como origin e vc quer mudar isso:**
+    1. Abre a pasta com o GUI BASH
+    2. Navegue até o diretório do repositório Git local usando o comando **`cd`** (change directory)
+    3. Execute o comando **`git remote rm origin`** para remover o **`remote`** existente com o nome de **`origin`**.
+    4. Execute o comando **`git remote add origin <URL do repositório remoto>`** para adicionar o **`remote`** do repositório remoto do GitHub ao repositório local.
+    5. Execute o comando **`git push -u origin main`** para enviar os commits locais para o repositório remoto do GitHub.

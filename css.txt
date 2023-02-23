@@ -1,0 +1,27 @@
+REFERENCIAR ARQUIVO EXTERNO DE CSS:
+    <link rel="stylesheet" href="style.css">
+
+____________________________________________
+NEGRITO
+    font-weight: bold;
+
+____________________________________________
+
+        SELETORES
+
+PRIMEIRO FILHO DE UM ELEMENTO EM NEGRITO - SELETOR
+    p:first-child {
+        font-weight: bold;
+    }
+
+
+FILHO DIRETO
+    div > p {} -> todo "p" que for filho direto de um "div"
+
+____________________________________________
+
+TIRAR BOLINHA DE UMA UL LISTA
+    ul {
+        list-style-type: none;
+    }
+
