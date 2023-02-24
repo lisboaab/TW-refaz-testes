@@ -25,3 +25,126 @@ TIRAR BOLINHA DE UMA UL LISTA
         list-style-type: none;
     }
 
+____________________________________________
+
+ADD IMAGEM NO BACKGROUND
+    .box-1 {
+    background-image: url(css3.png), url(html5.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 60px 60px, 50px 50px;
+    }
+
+
+ADD BACKGROUND GRADIENTE
+    .box-3 {
+    background: linear-gradient(10deg, red, green, blue);
+    }
+____________________________________________
+
+TRANSITIONS TRANSICOES MOVIMENTOS
+    --------- BACKGROUND COLOR
+    .box-1 {
+    transition: background-color 1s linear 0.5s;
+    }
+    
+    .box-1:hover {
+        background-color: purple;
+    }
+    --------- COR
+    .box-2 {
+        transition: color 1s ease 0.5s;
+    }
+    
+    .box-2:hover {
+        color: black;
+    }
+    -------- WIDTH
+    .box-3 {
+        transition: width 0.5s linear 1s;
+    }
+    
+    .box-3:hover {
+        width: 200px;
+    }
+    ------- TAMANHO, ALINHAMENTO, ROTACAO, INCLINADO
+    .box-4 {
+        transition: width 0.5s,heigth 0.5s;
+    }
+    
+    .box-4:hover {
+        height: 300px;
+        line-height: 300px;
+        transform: rotate(315deg);
+        width: 250px;
+    }
+
+____________________________________________
+
+EXEMPLO DE MEDIA QUERY 
+    (diminui as colunas do body de acordo com o tamanho da tela)
+    @media screen and (min-width: 768px) {
+        body{
+            background-color: aquamarine;
+            margin-left: 5px; 
+            margin-right: 5px;
+        }
+
+        figure {
+            float: left;
+            margin-right: 4.5%;
+            width: 42%;
+        }
+    }
+
+    @media screen and (min-width: 1020px) {
+        body{
+            background-color: tomato;
+            margin-left: 25px; 
+            margin-right: 25px;
+        }
+
+        figure {
+            width: 25%;
+            float: left;
+            margin-right: 4.5%;
+        }
+    }
+
+    -------------
+    (muda o background-color e o width de acordo com o tamanho da tela)
+    @media screen and (min-width: 961px) {
+        .box{
+            background-color: rgba(100,100,100,0.5);
+        }
+    }
+
+    @media screen and (max-width: 960px) {
+        .box{
+            background-color: blue;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+
+
+    ____________________________________________
+
+    ____________________________________________
+
+    ____________________________________________
+
+    ____________________________________________
+
+    ____________________________________________
+
+    ____________________________________________
+
+    ____________________________________________

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>T02-E04</title>
+    
+    <style>
+        #bearsContainer {
+            border: 2px solid;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 635px;
+        }
+        .bearFigure {
+            margin: 5px;
+            width: 200px;
+        }
+        .bearImage {
+            height: 200px;
+        }
+        .caption {
+            background-color: red;
+            color: white;
+            display: flex;
+            font-weight: bold;
+            justify-content: center;
+            padding: 2px;
+        }
+        input {
+            margin-bottom: 5px;
+        }
+        input[type="text"] {
+            width: 324px;
+        }
+        input[type="url"] {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form id="form1" action="index.html">
+            <div>
+                <label for="caption">Caption:</label>
+                <input type="text" name="caption" value="Paddington" id="caption" />
+            </div>
+            <div>
+                <label for="image">Bear Image:</label>
+                <input type="url" name="image" value="https://placebear.com/201/200" id="image" />
+            </div>
+        </form>
+    </div>
+    <div>
+        <input id="insertBear" type="button" value="Insert Bear" />
+        <input id="removeAllBears" type="button" value="Reset" />
+    </div>
+    <div>
+        <h2>Random Bears</h2>
+        <div id="bearsContainer">
+            <div class="bearFigure">
+                <div class="bearImage">
+                    <img src="https://placebear.com/201/200" alt="Random bear" />
+                </div>
+                <div class="caption">Paddington</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

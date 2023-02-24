@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 4 - teste 1 (form)</title>
+</head>
+<body>
+    <h1 class="title">Subscribe Form</h1>
+    <form id="formSubscribe" action="https://myform.com:8080/form-submit/index.html" method="POST" target="_blank">
+        <fieldset id="fieldsetFullName">
+            <legend> Full name: </legend>
+            First: (*) <input type="text" required>  
+            Last: (*) <input type="text" required>  
+            Age: (*) <input type="number" required>
+        </fieldset>
+        <fieldset id="fieldsetContactInfo">
+            <legend> Contact Information: </legend>
+            <input type="email" placeholder="username@domain.com">
+            <input type="tel" placeholder="Mobile phone">
+            <input type="url" placeholder="Personal Website URL">
+        </fieldset>
+        <fieldset>
+            <legend id="fieldsetGender"> Gender: </legend>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="genderMale" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="genderFemale" value="female">
+            <label for="male">Other</label>
+            <input type="radio" name="gender" id="genderOther" value="other">
+        </fieldset>
+        <fieldset id="fieldsetPhoto">
+            <legend> Photo: </legend>
+            <input type="file" title="Choose file">
+        </fieldset>
+        <p class="text">(*) Required fields</p>
+        <button id="btnSubmit" type="submit" title="subscribe">SUBSCRIBE</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T02-E01</title>
+<body>
+    <header>
+        <h1>Boston Club!</h1>
+        <img src="https://uilogos.co/img/logomark/leaf.png" width="150" height="150" alt="Logo website">
+        <form action="search.html" method="get">
+            <input type="text" name="search">
+            <input type="submit" name="Submit">
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#"> Main</li></a>
+                <ul>
+                    <li><a href="#nextMatch">Next Match</a></li>
+                    <li><a href="#latestMatchHighlight">Latest Match Highlights</a></li>
+                    <li><a href="#latestNews">Latest News</a></li>
+                </ul>
+            <li><a href="news/index.html">News</a></li>
+            <li><a href="shop/index.html">Shop</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <div id="nextMatch">
+        <h2 class="subtitle">Next Match</h2>
+        <img src="https://picsum.photos/id/1058/300/150">
+        <p><a href="#">Boston vs Houston </a></p>
+        <p class="pInfoNextmatch place">Cambridge, Boston</p>
+        <p class="pInfoNextmatch data">November 15</p>
+    </div>
+    <hr>
+    <div id="latestMatchHighlight">
+        <h2 class="subtitle">Latest Match Highlights</h2>
+        <video width="350" height="300" controls>
+            <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+        </video>
+    </div>
+    <hr>
+    <div id="latestNews">
+        <h2 class="subtitle">Latest News</h2>
+        <h3 class="subtitle 2">Texto texto
+        </h3>
+        <p class="text">Lorem ipsum</p>
+        <img src="https://picsum.photos/id/391/300/150" alt="city">
+        <p class="authorAndDate">John Doe, November 5</p>
+        <h3 class="subtitle 2"> Comment 2</h3>
+        <p class="dateComment"></p>
+        <p class="text"> Comment comment</p>
+        <h3 class="subtitle 1"> Comment 1</h3>
+        <p class="dateComment"></p>
+        <p class="text"> Comment comment</p>
+    </div>
+    <hr>
+    <footer>
+        <p id="copyright">Todos os direitos reservados &copy; 2023 Beatriz Lisboa.</p>
+        <form>
+            <h2 class="subtitle" id="titleContactUsForm"> Contact Us</h2>
+            Email: <input type="text" name="email"> <br> <br>
+            Message: <textarea name="texto" rows="6" cols="20" style="overflow: auto;"></textarea>
+            <br> <br>
+            <button type="submit">Send</button>
+        </form>
+    </footer>
+    
+</body>
+</html>

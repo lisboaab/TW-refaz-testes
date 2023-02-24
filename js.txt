@@ -1,4 +1,5 @@
             DOM
+        -----------  
 DOM STEP-BY-STEP
     1. Cria as variaveis(const) de todos os elementos que vai precisar
         ex: const container = document.getElementById('bearsContainer');
@@ -14,7 +15,6 @@ DOM STEP-BY-STEP
     6. Faz o append do container criado para o container principal do HTML
 
 
-
 PARA PEGAR O VALOR DE UM INPUT (DOM):
     const imageInput = document.getElementById('image')
     elementoCriado.src = variavelDoGetElementById.value; -> define o src do elemento criado como o link inserido no input
@@ -28,11 +28,43 @@ PARA APAGAR TUDO DENTRO DE UM CONTAINER MENOS O PRIMEIRO ELEMENTO:
             container.removeChild(container.lastChild); #remove comecando do ultimo elemento
     }
 
+CRIA UM TEXTO
+    1. Cria a tag nova: 
+       const tagTexto = document.createElement("p");
+    2. Cria o texto em si: 
+       const txt = document.createTextNode("This is a new paragraph.");
+    3. Faz o append do texto para a tag: 
+       tagTexto.appendChild(txt);
+    4. Faz o append do novo elemento para um elemento ja existente no HTML:
+       const elementoExistente = document.getElementById("div1");
+       elementoExistente.appendChild(tagTexto);
+
+
+FOR EACH
+    Seleciona todos os li's que sao first-child e que sao last-child e substitui por nome:
+    const firtstLi = document.querySelectorAll("li:first-child")
+    const lastsLi = document.querySelectorAll("li:last-child")
+
+    firtstLi.forEach((li) => (li.textContent = "first"));
+    lastsLi.forEach((li) => (li.textContent = "last"));
+
+
+QUERY SELECTOR ALL 
+    // selecionar todos elemento com base na tag, #id ou .class
+    let testando = document.querySelectorAll('.box')
+    //console.log(testando)
+    document.write(testando[0].textContent)
+    document.write(testando[1].textContent)
+    document.write(testando[2].textContent)
+    //testando[0].textContent = 'texto qualquer'
+
+ADD EVENT LISTENER COM HOVER
+    element.addEventListener("mouseover", changeText);
 
 ____________________________________________
 
 
-COMPARA LETRA POR LETRA DE UMA STIRNG E CONTA VOGAIS
+COMPARA LETRA POR LETRA DE UMA STIRNG E CONTA VOGAIS indice
     function countVowels() {
         let frase = prompt("Insira uma frase aqui: ")
         var count = 0
@@ -44,3 +76,22 @@ COMPARA LETRA POR LETRA DE UMA STIRNG E CONTA VOGAIS
         }
     console.log("A frase tem ", count, " vogais")
     }
+
+____________________________________________
+
+TAG P ¬ TAG DE PARAGRAFO ¬ TAG DE TEXTO
+    Quando quer colocar um texto dentro da tag pode ser:
+    elemento.textContent = "novo texto"
+    OU elemento.innerHTML = "novo texto"
+
+____________________________________________
+
+ADICIONAR ID OU OUTROS ATRIBUTOS A UM ELEMENTO CRIADO:
+    const list = document.createElement("ul");
+    list.setAttribute("id", "item-list"); // Adiciona um id para a lista
+    ----
+    const input = document.createElement("input");
+    input.setAttribute("type", "text"); // Adiciona o parametro de tipo para o input
+
+____________________________________________
+
